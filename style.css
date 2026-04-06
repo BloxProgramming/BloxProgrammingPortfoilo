@@ -1,0 +1,67 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+}
+
+* {
+    color: white;
+}
+
+.bigLabel {
+    font-size:xx-large
+}
+
+ul {
+    position: fixed;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #201E1F;
+    overflow: hidden;
+    display: flex;
+}
+
+ul li {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+ul li a :hover {
+    background-color: #111111;
+}
+
+.gameCard {
+    background-color:#201E1F;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 25px;
+    padding: 15;
+}
+
+.gameCard img {
+    border-radius: 25px;
+}
+
+.gameCard a {
+    padding: 14px 16px;
+}
+
+.gameGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
